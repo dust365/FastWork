@@ -1,0 +1,44 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.dust.small.fast worker</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>FastWorker</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="inke@company.com" url="https://www.yourcompany.com">inke</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+    提升效率的小工具 解放你的双手,高效的工具,fast woker!<br>
+    <em>test HTML </em>
+  ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+    <actions>
+<!--        <action id="TrackPlugin" class="com.dust.small.testdemo.AutoTrack" text="工具人" description="小工具人">-->
+<!--            <add-to-group group-id="HelpMenu" anchor="first"/>-->
+<!--            <keyboard-shortcut keymap="$default" first-keystroke="A" second-keystroke="B"/>-->
+<!--        </action>-->
+<!--        <action id="HelloWord" class="com.dust.small.HelloWord" text="HelloWord1"-->
+<!--                description="HelloWord2">-->
+<!--            <add-to-group group-id="HelpMenu" anchor="first"/>-->
+<!--        </action>-->
+        <action id="plugins.autotrack" class="com.dust.small.AutoTrack" text="FastBoy" description="快速的男孩">
+            <add-to-group group-id="HelpMenu" anchor="first" />
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt A"/>
+        </action>
+    </actions>
+</idea-plugin>
