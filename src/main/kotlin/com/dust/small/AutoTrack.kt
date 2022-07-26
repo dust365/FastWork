@@ -22,7 +22,7 @@ class AutoTrack : AnAction() {
 //          TestDialog().isVisible=true
 
 
-        val dialog = ControlDialog()
+        val dialog = AutoTrackDialog()
 //        dialog.setSize(500,500)
 //        dialog.pack()
         dialog.isVisible = true

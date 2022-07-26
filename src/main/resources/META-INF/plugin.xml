@@ -36,7 +36,7 @@
 <!--                description="HelloWord2">-->
 <!--            <add-to-group group-id="HelpMenu" anchor="first"/>-->
 <!--        </action>-->
-        <action id="plugins.autotrack" class="com.dust.small.AutoTrack" text="FastBoy" description="快速的男孩">
+        <action id="plugins.autotrack" class="com.dust.small.Application" text="FastWorker" description="快速的男孩"  icon="TasksIcons.Exception">
             <add-to-group group-id="HelpMenu" anchor="first" />
             <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt A"/>
         </action>

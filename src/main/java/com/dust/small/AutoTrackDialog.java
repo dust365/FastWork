@@ -1,18 +1,12 @@
 package com.dust.small;
 
-import com.fasterxml.aalto.util.TextUtil;
-import com.intellij.codeInsight.hint.HintManager;
 import com.intellij.ide.util.PropertiesComponent;
-import com.intellij.notification.NotificationDisplayType;
-import com.intellij.notification.NotificationGroup;
-import com.intellij.notification.NotificationType;
-import com.intellij.openapi.application.Application;
 
 import javax.swing.*;
 import java.awt.event.*;
 import java.io.*;
 
-public class ControlDialog extends JDialog {
+public class AutoTrackDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonClear;
 //    private JButton buttonCancel;
@@ -31,7 +25,7 @@ public class ControlDialog extends JDialog {
     private final  String MAIN_PROJECT_PATH_KEY = "main_project_path_key";
 
 
-    public ControlDialog() {
+    public AutoTrackDialog() {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonClear);
@@ -242,7 +236,7 @@ public class ControlDialog extends JDialog {
     }
 
     public static void main(String[] args) {
-        ControlDialog dialog = new ControlDialog();
+        AutoTrackDialog dialog = new AutoTrackDialog();
         dialog.pack();
         dialog.setVisible(true);
         System.exit(0);
