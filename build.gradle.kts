@@ -1,3 +1,5 @@
+import org.jetbrains.intellij.ideaDir
+
 plugins {
     id("java")
     id("org.jetbrains.kotlin.jvm") version "1.6.20"
@@ -16,8 +18,10 @@ intellij {
     version.set("2021.2")
     type.set("IC") // Target IDE Platform
 
-    plugins.set(listOf(/* Plugin Dependencies */))
+    plugins.set(listOf("android"))
+
 }
+
 
 tasks {
     // Set the JVM compatibility versions
@@ -42,6 +46,18 @@ tasks {
 
     publishPlugin {
         token.set(System.getenv("PUBLISH_TOKEN"))
+    }
+
+    runIde{
+//        ideaDir("/Applications/Android Studio.app/Contents")
+//        ideaDir ("/Applications/Android Studio.app/Contents")
+//        ideDir.set(File("/Applications/Android Studio.app/Contents"))
+//        autoReloadPlugins.set(true)
+//        ideDirectory '/Applications/Android Studio.app/Contents'
+        ideDir.set(file("/Applications/Android Studio.app/Contents"))
+
+//        ideDir = '/Applications/Android Studio.app/Contents'
+//        autoReloadPlugins = true
     }
 
 

@@ -12,7 +12,7 @@ public final class PluginIcons {
         return IconLoader.getIcon(path, PluginIcons.class);
     }
 
-    public static final Icon MAIN_ACTION = loadIcon("/images/main-icon.png");
+    public static final Icon MAIN_ACTION = loadIcon("/images/main.png");
     public static final Icon TOOL_WINDOW = loadIcon("/images/toolWindowMessages.svg");
 
     public static final Icon ICON_ADD = loadIcon("/images/add.svg");
