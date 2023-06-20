@@ -8,7 +8,7 @@
     <name>FastWorker</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="inke@company.com" url="https://www.yourcompany.com">inke</vendor>
+    <vendor email="chenhui@inke.cn" url="https://www.inke.cn/">映宇宙</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
@@ -27,18 +27,27 @@
     <extensions defaultExtensionNs="com.intellij">
 
     </extensions>
+
+
+
     <actions>
-<!--        <action id="TrackPlugin" class="com.dust.small.testdemo.AutoTrack" text="工具人" description="小工具人">-->
-<!--            <add-to-group group-id="HelpMenu" anchor="first"/>-->
-<!--            <keyboard-shortcut keymap="$default" first-keystroke="A" second-keystroke="B"/>-->
-<!--        </action>-->
-<!--        <action id="HelloWord" class="com.dust.small.HelloWord" text="HelloWord1"-->
-<!--                description="HelloWord2">-->
-<!--            <add-to-group group-id="HelpMenu" anchor="first"/>-->
-<!--        </action>-->
-        <action id="plugins.autotrack" class="com.dust.small.Application" text="FastWorker" description="快速的男孩"  icon="TasksIcons.Exception">
-            <add-to-group group-id="HelpMenu" anchor="first" />
-            <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt A"/>
-        </action>
+
+        <group id="FastWorker.TopMenu"
+               text="Faster Plugin"
+               description="Demo Plugin in top menu">
+
+            <action id="plugins.autotrack" class="com.dust.small.Application" text="FastWorker" description="极速打工人"
+                    icon="PluginIcons.MAIN_ACTION">
+                <!--  快捷键-->
+                <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt A"/>
+                <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
+                <add-to-group group-id="TouchBarDefault" anchor="first"/>
+                <!-- 将这个Group添加到主菜单 -->
+                <!--            <add-to-group group-id="MainMenu" anchor="last"/>-->
+            </action>
+
+
+
+        </group>
     </actions>
 </idea-plugin>

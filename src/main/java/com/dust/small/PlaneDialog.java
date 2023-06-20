@@ -1,7 +1,11 @@
 package com.dust.small;
 
+import com.intellij.ide.BrowserUtil;
+import org.apache.http.util.TextUtils;
+
 import javax.swing.*;
 import java.awt.event.*;
+import java.net.URI;
 
 public class PlaneDialog extends JDialog {
     private JPanel contentPane;
@@ -27,6 +31,13 @@ public class PlaneDialog extends JDialog {
 //
         PackgeButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+
+//                WebDialog dialog = new  WebDialog();
+//                dialog.setVisible(true)
+                String publish_url="http://192.168.10.17:8080/view/LSG/";
+                if (!TextUtils.isEmpty(publish_url)) {
+                    BrowserUtil.open(publish_url);
+                }
 
             }
         });
