@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+
+    <Env>
+        <python>/usr/local/bin/python</python>
+        <python3>/usr/local/bin/python3</python3>
+    </Env>
+
+    <Scripts>
+
+        <Script_Defult>
+            <Name>检查URL硬编码</Name>
+            <Description>检查项目中对网络URL是否存在硬编码的情况，比如：http://10.111.70.138:8084/api/live/play/pk/info
+            </Description>
+            <Code>sh check_hard_code_http_url.sh</Code>
+            <Result>true</Result>
+        </Script_Defult>
+
+        <Script>
+            <Name>检查URL硬编码</Name>
+            <Description>检查项目中对网络URL是否存在硬编码的情况，比如：http://10.111.70.138:8084/api/live/play/pk/info
+            </Description>
+            <Code>sh check_hard_code_http_url.sh</Code>
+            <Result>true</Result>
+        </Script>
+
+        <Script>
+            <Name>检查项目中无用类</Name>
+            <Description>检查项目中是否存在没有使用的类</Description>
+            <Code>python3 code_shrink.py find-unused-class</Code>
+            <Result>true</Result>
+        </Script>
+
+        <Script>
+            <Name>检查项目中无用导入</Name>
+            <Description>检查项目中是否存在无用导入</Description>
+            <Code>python3 code_shrink.py find-unused-import</Code>
+            <Result>true</Result>
+        </Script>
+
+        <Script>
+            <Name>检查项目中的大图（体积、尺寸）</Name>
+            <Description>检查项目中的大图（体积、尺寸）</Description>
+            <Code>sh find_large_png.sh</Code>
+            <Result>true</Result>
+        </Script>
+
+        <Script>
+            <Name>检查项目中的相同图</Name>
+            <Description>检查项目中的相同图</Description>
+            <Code>sh find_same_png.sh</Code>
+            <Result>true</Result>
+        </Script>
+
+        <Script>
+            <Name>更新ServiceInfo配置</Name>
+            <Description>更新ServiceInfo配置</Description>
+            <Code>sh update_buildin_host.sh</Code>
+            <Result>false</Result>
+        </Script>
+
+    </Scripts>
+
+</Config>
