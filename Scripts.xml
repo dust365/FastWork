@@ -9,10 +9,9 @@
     <Scripts>
 
         <Script_Defult>
-            <Name>检查URL硬编码</Name>
-            <Description>检查项目中对网络URL是否存在硬编码的情况，比如：http://10.111.70.138:8084/api/live/play/pk/info
-            </Description>
-            <Code>sh check_hard_code_http_url.sh</Code>
+            <Name>检查项目中的大图（体积、尺寸）</Name>
+            <Description>检查项目中的大图（体积、尺寸）</Description>
+            <Code>sh find_large_png.sh</Code>
             <Result>true</Result>
         </Script_Defult>
 
