@@ -20,6 +20,7 @@ intellij {
 
     plugins.set(listOf("android"))
 
+
 }
 
 
@@ -54,7 +55,7 @@ tasks {
 //        ideDir.set(File("/Applications/Android Studio.app/Contents"))
 //        autoReloadPlugins.set(true)
 //        ideDirectory '/Applications/Android Studio.app/Contents'
-        ideDir.set(file("/Applications/Android Studio.app/Contents"))
+//        ideDir.set(file("/Applications/Android Studio.app/Contents"))
 
 //        ideDir = '/Applications/Android Studio.app/Contents'
 //        autoReloadPlugins = true

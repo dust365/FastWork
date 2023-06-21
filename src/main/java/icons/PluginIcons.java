@@ -13,6 +13,7 @@ public final class PluginIcons {
     }
 
     public static final Icon MAIN_ACTION = loadIcon("/images/main.png");
+    public static final Icon MAIN_ACTION2 = loadIcon("/images/fly.svg");
     public static final Icon TOOL_WINDOW = loadIcon("/images/toolWindowMessages.svg");
 
     public static final Icon ICON_ADD = loadIcon("/images/add.svg");

@@ -36,8 +36,20 @@
                text="Faster Plugin"
                description="Demo Plugin in top menu">
 
-            <action id="plugins.autotrack" class="com.dust.small.Application" text="FastWorker" description="极速打工人"
-                    icon="PluginIcons.MAIN_ACTION">
+            <action id="plugins.autotrack" class="com.dust.small.Application" text="Mine Tools" description="工具箱"
+                    icon="PluginIcons.MAIN_ACTION2">
+                <!--  快捷键-->
+<!--                <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt A"/>-->
+<!--                <add-to-group group-id="ToolbarRunGroup" anchor="last"/>-->
+<!--                <add-to-group group-id="TouchBarDefault" anchor="first"/>-->
+                <!-- 将这个Group添加到主菜单 -->
+<!--                 <add-to-group group-id="MainMenu" anchor="last"/>-->
+                <add-to-group group-id="HelpMenu" anchor="first" />
+                <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt B"/>
+            </action>
+
+            <action id="plugins.fastWork" class="com.dust.small.FastWorkAction" text="FastWorker" description="极速打工人"
+                icon="PluginIcons.MAIN_ACTION">
                 <!--  快捷键-->
                 <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta alt A"/>
                 <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
